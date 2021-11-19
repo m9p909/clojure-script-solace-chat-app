@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "shadow-cljs": "^2.15.13"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "solclientjs": "^10.8.0"
+  }
+}
