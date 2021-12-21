@@ -51,6 +51,8 @@
 (defn send-message [message]
   (.publish client topic (clj->json message)))
 
+(.addEventListener js/window "unload" #(.end client))
+
 ;; --------------------------
 ;; Business
 ;;
@@ -117,7 +119,7 @@
 
 (defn home-page []
   [:div.container
-   [:h2 "a simple clojure-solace chat app"]
+   [:h2 "a simple clojure mqtt chat app"]
    [(get page-map @page)]])
 
 ;; Initialize app
