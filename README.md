@@ -1,4 +1,4 @@
-
+This branch switches from using the Solace broker connector to a generic mqtt connection. I hoped to be able to run this on a free broker, but I can't get wss to work with the free moquitto broker. 
 ### Development mode
 ```
 npm install
